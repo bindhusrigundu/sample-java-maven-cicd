@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/bindhusrigundu/sample-java-maven-cicd.git'
+                git branch: 'main', url: 'https://github.com/bindhusrigundu/sample-java-maven-cicd.git'
             }
         }
 
